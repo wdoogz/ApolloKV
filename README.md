@@ -8,8 +8,8 @@ ApolloKV can store Key Value pairs in memory for short term use.
 You can test out ApolloKV by doing the following:
 
 ```bash
-docker pull wdoogz/apollokv
-docker run -d -p 8080:10000 wdoogz/apollokv
+docker pull wdoogz/apollokv:main
+docker run -d -p 8080:10000 wdoogz/apollokv:main
 curl -X POST localhost:8080/write -d '{"ApolloKV":"is awesome"}'
 curl -X POST localhost:8080/write -d '{"Doogz":"Rules"}'
 curl -X GET localhost:8080/kv
