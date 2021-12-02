@@ -7,7 +7,7 @@ COPY go.mod ./go.mod
 COPY api ./api
 RUN go build -o app .
 
-FROM debian:bookworm-slim
+FROM alpine:latest
 WORKDIR /var/goapp
 COPY --from=builder /var/goapp/app ./ 
 CMD ["./app"]
