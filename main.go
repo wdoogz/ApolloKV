@@ -1,12 +1,13 @@
 package main
 
 import (
-	"fmt"
+	"log"
 
 	"github.com/wdoogz/ApolloKV/api"
 )
 
 func main() {
-	fmt.Println("hello")
+	log.Print("[INFO] Starting ApolloKV...")
+	log.Print("[INFO] ApolloKV started")
 	api.HandleRequests()
 }
